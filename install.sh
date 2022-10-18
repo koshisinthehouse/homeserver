@@ -30,4 +30,7 @@ apt-cache policy docker-ce
 sudo apt-get install docker-ce -y
 ## Docker should now be installed, the daemon started, and the process enabled to start on boot. Check that it’s running:
 sudo systemctl status docker
+# add user to docker group
+sudo usermod -aG docker ${USER}
+su - ${USER}
 # install docker - end
