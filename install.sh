@@ -4,6 +4,10 @@ apt-get install ethtool
 apt-get install net-tools
 
 
+# mac adresse ermitteln
+ ip  link
+
+
 ifconfig
 # get network adapter infos
 sudo ip a
