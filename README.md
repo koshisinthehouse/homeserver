@@ -1,4 +1,4 @@
-# homeserver
+# homeserver ubuntu linux 22.04
 Installationshilfe für meinen Linux Homeserver.
 Das Script ist für die IP "192.168.178.10" und den Linux Benuter "server" ausgelegt.
 Hat der Server eine andere IP oder einen anderen Linux Benutzernamen muss das Script und die anderen Dateien vor Ausführung angepasst werden.
