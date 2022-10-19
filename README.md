@@ -13,7 +13,7 @@ https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-i
 
 
 
-export $USER="server"; export $IP_SERVER="192.168.178.10"; export $IP_GATEWAY="192.168.178.1"; sed -i "s/<USER>/$USER/g" ./install.sh; sed -i "s/<IP_SERVER>/$IP_SERVER/g" ./etc/netplan/00-installer-config.yaml;
+export USER="server"; export IP_SERVER="192.168.178.10"; export IP_GATEWAY="192.168.178.1"; sed -i "s/<USER>/$USER/g" ./install.sh; sed -i "s/<IP_SERVER>/$IP_SERVER/g" ./etc/netplan/00-installer-config.yaml;
 
 
 ### Installationsscript ausführen
