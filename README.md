@@ -11,6 +11,11 @@ https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-i
 <IP_GATEWAY> = 192.168.178.1
 <USER> = server
 
+
+
+export $USER="server"; export $IP_SERVER="192.168.178.10"; export $IP_GATEWAY="192.168.178.1"; sed -i "s/<USER>/$USER/g" ./install.sh; sed -i "s/<IP_SERVER>/$IP_SERVER/g" ./etc/netplan/00-installer-config.yaml;
+
+
 ### Installationsscript ausführen
 	sudo apt-get install unzip -y && cd /tmp && if [ -d "homeserver-main" ]; then rm -Rf homeserver-main; fi && if [ -e main.zip ]; then rm main.zip; fi && wget https://github.com/koshisinthehouse/homeserver/archive/refs/heads/main.zip && unzip main.zip && cd homeserver-main && chmod 700 install.sh
 
