@@ -28,7 +28,7 @@ sudo systemctl status docker
 # add user to docker group
 sudo usermod -aG docker <USER>
 su - <USER>
-sudo apt  install docker-compose
+sudo apt install docker-compose
 # install docker - end
 
 
