@@ -47,6 +47,17 @@ services:
       - /_store/verdaccio/plugins:/verdaccio/plugins
     ports:
       - "4873:4873"
+  portainer:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /_store/portainer/etc/localtime:/etc/localtime:ro
+      - /_store/portainer/var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - 9000:9000
 networks:
   homeserver:
     driver: bridge
